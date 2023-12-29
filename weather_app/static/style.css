@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d1d1d1;
+  text-align: center;
+  display:flex-box;
+  
+}
+
+form {
+  margin: 20px 5px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 35px;
+}
+
+button {
+  background-color: #1aa5e6;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+}
+.comparison-container{
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 33%;
+  flex-wrap: wrap;
+}
+.city-container {
+  background-color: #313131;
+  color: white;
+  width: 20rem;
+  border: 1px solid white;
+  border-radius: 10px ;
+  height: 15rem;
+}
+
+.forecast {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% / 5 - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .forecast {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast {
+    width: 100%;
+  }
+}
